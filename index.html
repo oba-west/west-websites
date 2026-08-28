@@ -11,7 +11,110 @@
 <img src="https://dsosoftware.com/images/icons/desktop/hero-img.png"
      alt="Business computer system"
      class="profile-photo">
-<style>
+<style>.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.price-card {
+    position: relative;
+    background: white;
+    padding: 35px 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+}
+
+.price-card h3 {
+    color: #071952;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #1685ff;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.price-card p:not(.price) {
+    color: #687386;
+    margin: 8px 0;
+}
+
+.price-card .btn {
+    margin-top: 20px;
+}
+
+.featured {
+    border: 3px solid #1685ff;
+    transform: scale(1.03);
+}
+
+.popular {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1685ff;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured {
+        transform: none;
+    }
+}.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.portfolio-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.portfolio-image {
+    height: 180px;
+    background: #e8f2ff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.portfolio-card h3 {
+    color: #071952;
+    margin-bottom: 8px;
+}
+
+.portfolio-card p {
+    color: #687386;
+}
+
+@media (max-width: 700px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
 *{
     margin:0;
     padding:0;
@@ -573,8 +676,43 @@ footer a:hover{
         height:195px;
     }
 }
-</style>
-</head>
+</style>#contactForm {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d5dce8;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: #1685ff;
+}
+
+#contactForm button {
+    padding: 15px;
+    background: #20c96b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}8
+</head><link rel="icon" href="icon.svg" type="image/svg+xml"><meta name="description" content="West Websites creates professional, modern and mobile-friendly websites for businesses and individuals.">
+<meta name="keywords" content="West Websites, website design, web development, business websites, Nigeria">
+<meta name="author" content="West Websites">
 
 <body><script>
 if ("serviceWorker" in navigator) {
@@ -582,7 +720,46 @@ if ("serviceWorker" in navigator) {
         .then(() => console.log("West Websites app ready!"))
         .catch(error => console.log("Service Worker error:", error));
 }
-</script>
+</script><section id="portfolio"><meta property="og:title" content="West Websites | Professional Web Solutions">
+<meta property="og:description" content="Professional websites designed to help your business grow online.">
+<meta property="og:type" content="website">
+
+    <div class="container">
+
+        <div class="section-title">
+            <small>OUR WORK</small>
+            <h2>Our Portfolio</h2>
+            <p>
+                A look at some of the digital experiences
+                created by West Websites.
+            </p>
+        </div>
+
+        <div class="portfolio-grid">
+
+            <div class="portfolio-card">
+                <div class="portfolio-image">💻</div>
+                <h3>Business Website</h3>
+                <p>Professional website for a growing business.</p>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-image">🛍️</div>
+                <h3>Online Store</h3>
+                <p>Clean and simple design for an online shop.</p>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-image">📱</div>
+                <h3>Mobile Website</h3>
+                <p>A responsive website designed for mobile users.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 <!-- ================= HEADER ================= -->
 
@@ -610,7 +787,7 @@ if ("serviceWorker" in navigator) {
 
     </div>
 
-</nav>
+</nav><a href="#pricing">Pricing</a><a href="#portfolio">Portfolio</a>
 
 </header>
 
@@ -928,7 +1105,54 @@ if ("serviceWorker" in navigator) {
 
 <!-- ================= CONTACT ================= -->
 
-<section class="contact" id="contact">
+<section class="contact" id="contact"><section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+            <small>CONTACT US</small>
+            <h2>Let's Work Together</h2>
+            <p>
+                Tell us what you need and we'll get back to you.
+            </p>
+        </div>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                id="message"
+                placeholder="Tell us about your project..."
+                rows="6"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Enquiry 💬
+            </button>
+
+        </form>
+
+        <p class="whatsapp-number">
+            WhatsApp: +234 803 601 3299
+        </p>
+
+    </div>
+
+</section>
 
 <div class="container">
 
@@ -1012,7 +1236,145 @@ if ("serviceWorker" in navigator) {
         <a href="#why">Why Us</a>
         <a href="#contact">Contact</a>
 
+    </div><section id="pricing">
+
+    <div class="container">
+
+        <div class="section-title">
+            <small>PRICING</small>
+            <h2>Website Packages</h2>
+            <p>
+                Choose a package that fits your business needs.
+            </p>
+        </div>
+
+        <div class="pricing-grid">
+
+            <div class="price-card">
+                <h3>Starter</h3>
+                <p class="price">₦50,000</p>
+
+                <p>✓ Professional website</p>
+                <p>✓ Mobile-friendly design</p>
+                <p>✓ Up to 3 sections</p>
+                <p>✓ WhatsApp contact</p>
+
+                <a href="https://wa.me/2348036013299?text=Hello%20West%20Websites%2C%20I'm%20interested%20in%20the%20Starter%20package."
+                   class="btn btn-blue">
+                    Get Started
+                </a>
+            </div>
+
+
+            <div class="price-card featured">
+
+                <div class="popular">POPULAR</div>
+
+                <h3>Business</h3>
+                <p class="price">₦100,000</p>
+
+                <p>✓ Professional website</p>
+                <p>✓ Mobile-friendly design</p>
+                <p>✓ Multiple sections</p>
+                <p>✓ WhatsApp integration</p>
+                <p>✓ Contact form</p>
+                <p>✓ Portfolio section</p>
+
+                <a href="https://wa.me/2348036013299?text=Hello%20West%20Websites%2C%20I'm%20interested%20in%20the%20Business%20package."
+                   class="btn btn-green">
+                    Choose Business
+                </a>
+
+            </div>
+
+
+            <div class="price-card">
+
+                <h3>Premium</h3>
+                <p class="price">₦200,000+</p>
+
+                <p>✓ Custom website</p>
+                <p>✓ Advanced features</p>
+                <p>✓ Custom design</p>
+                <p>✓ Business integrations</p>
+                <p>✓ Priority support</p>
+
+                <a href="https://wa.me/2348036013299?text=Hello%20West%20Websites%2C%20I'd%20like%20to discuss%20a%20Premium%20website."
+                   class="btn btn-blue">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
+
+    </section>.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.price-card {
+    position: relative;
+    background: white;
+    padding: 35px 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+}
+
+.price-card h3 {
+    color: #071952;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #1685ff;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.price-card p:not(.price) {
+    color: #687386;
+    margin: 8px 0;
+}
+
+.price-card .btn {
+    margin-top: 20px;
+}
+
+.featured {
+    border: 3px solid #1685ff;
+    transform: scale(1.03);
+}
+
+.popular {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1685ff;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured {
+        transform: none;
+    }
+}
 
 
     <div>
@@ -1042,5 +1404,24 @@ if ("serviceWorker" in navigator) {
 
 </footer>
 
-</body>
+</body><script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    const text =
+        "Hello West Websites!%0A%0A" +
+        "Name: " + encodeURIComponent(name) + "%0A" +
+        "Email: " + encodeURIComponent(email) + "%0A" +
+        "Project: " + encodeURIComponent(message);
+
+    window.location.href =
+        "https://wa.me/2348036013299?text=" + text;
+
+});
+</script>
 </html>

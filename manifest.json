@@ -1,9 +1,17 @@
 {
   "name": "West Websites",
   "short_name": "West",
-  "start_url": "./index.html",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#061735",
   "theme_color": "#061735",
-  "description": "Professional web solutions by West Websites"
+  "description": "Professional web solutions by West Websites",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
 }
