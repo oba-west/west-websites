@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>West Websites | Professional Web Solutions</title><link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#061735"><meta name="theme-color" content="#061735">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<img src="https://dsosoftware.com/images/icons/desktop/hero-img.png"
+     alt="Business computer system"
+     class="profile-photo">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f8fc;
+    color:#172033;
+    line-height:1.6;
+}
+
+/* ===== HEADER ===== */
+
+header{
+    background:#061735;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 4px 20px rgba(0,0,0,.15);
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:16px 25px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:white;
+    font-size:21px;
+    font-weight:800;
+}
+
+.logo-icon{
+    width:45px;
+    height:45px;
+    border:3px solid #1685ff;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    font-weight:bold;
+    transform:skew(-5deg);
+}
+
+.logo span{
+    color:#1685ff;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#1685ff;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+    min-height:680px;
+    background:
+    radial-gradient(circle at 80% 20%,rgba(22,133,255,.25),transparent 30%),
+    linear-gradient(135deg,#061735,#0b2e69);
+    color:white;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+}
+
+.hero-container{
+    max-width:1200px;
+    width:100%;
+    margin:auto;
+    padding:80px 25px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:58px;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.hero h1 span{
+    color:#1685ff;
+}
+
+.hero p{
+    font-size:19px;
+    color:#dce8fa;
+    max-width:600px;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-blue{
+    background:#1685ff;
+    color:white;
+}
+
+.btn-blue:hover{
+    transform:translateY(-3px);
+}
+
+.btn-green{
+    background:#20c96b;
+    color:white;
+}
+
+.btn-green:hover{
+    transform:translateY(-3px);
+}
+
+/* ===== TECHNOLOGY IMAGE ===== */
+
+.tech-image{
+    position:relative;
+    min-height:390px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.glow{
+    position:absolute;
+    width:330px;
+    height:330px;
+    border-radius:50%;
+    background:#1685ff;
+    opacity:.15;
+    filter:blur(30px);
+}
+
+.laptop{
+    width:430px;
+    max-width:100%;
+    position:relative;
+    z-index:2;
+}
+
+.screen{
+    height:250px;
+    background:#101c35;
+    border:8px solid #34445f;
+    border-radius:15px 15px 5px 5px;
+    padding:18px;
+    box-shadow:0 25px 50px rgba(0,0,0,.4);
+}
+
+.screen-top{
+    color:#1685ff;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.screen h3{
+    font-size:27px;
+    margin-bottom:15px;
+}
+
+.fake-line{
+    height:9px;
+    background:#263a60;
+    border-radius:10px;
+    margin:12px 0;
+}
+
+.fake-line.short{
+    width:60%;
+}
+
+.fake-button{
+    display:inline-block;
+    background:#1685ff;
+    padding:9px 18px;
+    border-radius:5px;
+    margin-top:10px;
+    font-size:12px;
+}
+
+.keyboard{
+    height:28px;
+    width:110%;
+    margin-left:-5%;
+    background:#718096;
+    border-radius:0 0 12px 12px;
+}
+
+/* ===== GENERAL SECTIONS ===== */
+
+section{
+    padding:85px 25px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title small{
+    color:#1685ff;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.section-title h2{
+    font-size:38px;
+    color:#071952;
+    margin-top:8px;
+}
+
+.section-title p{
+    max-width:650px;
+    margin:10px auto;
+    color:#687386;
+}
+
+/* ===== ABOUT ===== */
+
+.about{
+    background:white;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about-visual{
+    min-height:350px;
+    background:linear-gradient(145deg,#071952,#1685ff);
+    border-radius:20px;
+    padding:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(7,25,82,.2);
+}
+
+.about-visual div{
+    border:2px solid rgba(255,255,255,.3);
+    padding:45px 25px;
+    border-radius:15px;
+}
+
+.about-visual strong{
+    display:block;
+    font-size:65px;
+}
+
+.about h3{
+    color:#071952;
+    font-size:30px;
+    margin-bottom:18px;
+}
+
+.about p{
+    color:#5e6878;
+    margin-bottom:15px;
+}
+
+/* ===== SERVICES ===== */
+
+.services{
+    background:#f5f8fc;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:32px 22px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.07);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.icon{
+    width:65px;
+    height:65px;
+    margin:0 auto 18px;
+    border-radius:50%;
+    background:#e8f2ff;
+    color:#1685ff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+}
+
+.card h3{
+    color:#071952;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#687386;
+    font-size:15px;
+}
+
+/* ===== WHY US ===== */
+
+.why{
+    background:#061735;
+    color:white;
+}
+
+.why .section-title h2{
+    color:white;
+}
+
+.why .section-title p{
+    color:#c5d1e5;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.why-card{
+    border:1px solid rgba(255,255,255,.15);
+    padding:30px;
+    border-radius:15px;
+    background:rgba(255,255,255,.05);
+}
+
+.why-card h3{
+    margin:15px 0 8px;
+}
+
+.why-card p{
+    color:#c5d1e5;
+}
+
+/* ===== CONTACT ===== */
+
+.contact{
+    background:white;
+    text-align:center;
+}
+
+.contact-box{
+    max-width:750px;
+    margin:auto;
+}
+
+.contact-box h2{
+    font-size:40px;
+    color:#071952;
+    margin-bottom:15px;
+}
+
+.contact-box p{
+    color:#687386;
+    margin-bottom:25px;
+}
+
+.whatsapp-number{
+    display:block;
+    margin-top:20px;
+    color:#071952;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    background:#031126;
+    color:white;
+    padding:50px 25px 25px;
+}
+
+.footer-grid{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:40px;
+}
+
+footer h3{
+    margin-bottom:15px;
+}
+
+footer p{
+    color:#aebbd0;
+}
+
+footer a{
+    display:block;
+    color:#aebbd0;
+    text-decoration:none;
+    margin:7px 0;
+}
+
+footer a:hover{
+    color:#1685ff;
+}
+
+.copyright{
+    max-width:1100px;
+    margin:40px auto 0;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.1);
+    text-align:center;
+    color:#8290a6;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:850px){
+
+    .nav-links{
+        gap:10px;
+    }
+
+    .nav-links a{
+        font-size:13px;
+    }
+
+    .hero-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero p{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:43px;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:550px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        min-height:auto;
+    }
+
+    .hero-container{
+        padding:65px 20px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .laptop{
+        width:330px;
+    }
+
+    .screen{
+        height:195px;
+    }
+}
+</style>
+</head>
+
+<body><script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js")
+        .then(() => console.log("West Websites app ready!"))
+        .catch(error => console.log("Service Worker error:", error));
+}
+</script>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        <div class="logo-icon">W</div>
+
+        <div>
+            WEST <span>WEBSITES</span>
+        </div>
+
+    </div>
+
+    <div class="nav-links">
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+</nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-container">
+
+    <div>
+
+        <h1>
+            We Build
+            <span>Modern Websites</span>
+            That Grow Your Business
+        </h1>
+
+        <p>
+            West Websites creates professional,
+            responsive and user-friendly websites
+            that help businesses stand out online.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#services" class="btn btn-blue">
+                Explore Our Services
+            </a>
+
+            <a href="https://wa.me/2348036013299"
+               class="btn btn-green">
+                💬 Chat on WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- PROFESSIONAL TECHNOLOGY VISUAL -->
+
+    <div class="tech-image">
+
+        <div class="glow"></div>
+
+        <div class="laptop">
+
+            <div class="screen">
+
+                <div class="screen-top">
+                    &lt;/&gt; WEST WEBSITES
+                </div>
+
+                <h3>
+                    Creating Digital
+                    Experiences
+                </h3>
+
+                <div class="fake-line"></div>
+                <div class="fake-line short"></div>
+
+                <div class="fake-button">
+                    GET STARTED
+                </div>
+
+            </div>
+
+            <div class="keyboard"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+    <div class="section-title">
+
+        <small>About Us</small>
+
+        <h2>About West Websites</h2>
+
+        <p>
+            Helping businesses build a powerful
+            digital presence.
+        </p>
+
+    </div>
+
+
+    <div class="about-grid">
+
+        <div class="about-visual">
+
+            <div>
+
+                <strong>W</strong>
+
+                <h3>
+                    WEST WEBSITES
+                </h3>
+
+                <p>
+                    Digital solutions for modern businesses.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Your Ideas.
+                Our Technology.
+            </h3>
+
+            <p>
+                West Websites is a digital web service
+                focused on helping individuals,
+                entrepreneurs and businesses establish
+                a professional presence online.
+            </p>
+
+            <p>
+                We create clean, attractive and
+                easy-to-use websites designed to work
+                across smartphones, tablets and computers.
+            </p>
+
+            <p>
+                Our goal is simple: create websites
+                that look professional and help your
+                business connect with more customers.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services" id="services">
+
+<div class="container">
+
+    <div class="section-title">
+
+        <small>Our Services</small>
+
+        <h2>What We Offer</h2>
+
+        <p>
+            Professional digital services for
+            businesses and individuals.
+        </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+
+        <div class="card">
+
+            <div class="icon">🌐</div>
+
+            <h3>Website Design</h3>
+
+            <p>
+                Modern and attractive websites
+                designed around your brand.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">💻</div>
+
+            <h3>Website Development</h3>
+
+            <p>
+                Functional websites built to work
+                smoothly across different devices.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">📱</div>
+
+            <h3>Mobile Websites</h3>
+
+            <p>
+                Responsive websites optimized
+                for smartphones and tablets.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🛠️</div>
+
+            <h3>Website Support</h3>
+
+            <p>
+                Updates, improvements and
+                ongoing website assistance.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= WHY US ================= -->
+
+<section class="why" id="why">
+
+<div class="container">
+
+    <div class="section-title">
+
+        <small>Why Choose Us?</small>
+
+        <h2>
+            Why Businesses Choose West Websites
+        </h2>
+
+        <p>
+            We focus on quality, simplicity and
+            a great customer experience.
+        </p>
+
+    </div>
+
+
+    <div class="why-grid">
+
+
+        <div class="why-card">
+
+            <div class="icon">⭐</div>
+
+            <h3>Professional</h3>
+
+            <p>
+                Clean, modern designs that help
+                your business build credibility.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="icon">📱</div>
+
+            <h3>Mobile Friendly</h3>
+
+            <p>
+                Your website will look great on
+                phones, tablets and computers.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="icon">🚀</div>
+
+            <h3>Fast & Reliable</h3>
+
+            <p>
+                We focus on creating simple,
+                useful and reliable websites.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+    <div class="contact-box">
+
+        <div class="section-title">
+
+            <small>Let's Work Together</small>
+
+            <h2>
+                Have a Project in Mind?
+            </h2>
+
+        </div>
+
+        <p>
+            Let's bring your idea to life with
+            a professional website that represents
+            your brand and grows your business.
+        </p>
+
+
+        <a href="https://wa.me/2348036013299"
+           class="btn btn-green">
+
+            💬 Chat With West Websites
+
+        </a>
+
+
+        <div class="whatsapp-number">
+
+            WhatsApp:
+            +234 803 601 3299
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-grid">
+
+
+    <div>
+
+        <div class="logo">
+
+            <div class="logo-icon">W</div>
+
+            <div>
+                WEST <span>WEBSITES</span>
+            </div>
+
+        </div>
+
+        <br>
+
+        <p>
+            Turning ideas into professional
+            digital experiences.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <h3>Quick Links</h3>
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+
+    <div>
+
+        <h3>Contact Us</h3>
+
+        <a href="https://wa.me/2348036013299">
+            💬 +234 803 601 3299
+        </a>
+
+        <a href="#contact">
+            📍 Nigeria
+        </a>
+
+    </div>
+
+
+</div>
+
+
+<div class="copyright">
+
+    © 2026 West Websites.
+    All rights reserved.
+
+</div>
+
+</footer>
+
+</body>
+</html>

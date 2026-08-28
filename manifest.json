@@ -1,0 +1,9 @@
+{
+  "name": "West Websites",
+  "short_name": "West",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#061735",
+  "theme_color": "#061735",
+  "description": "Professional web solutions by West Websites"
+}
