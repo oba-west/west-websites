@@ -4,117 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>West Websites | Professional Web Solutions</title><link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#061735"><meta name="theme-color" content="#061735">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<img src="https://dsosoftware.com/images/icons/desktop/hero-img.png"
-     alt="Business computer system"
-     class="profile-photo">
-<style>.pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 30px;
-}
+<title>West Websites | Professional Web Solutions</title>
 
-.price-card {
-    position: relative;
-    background: white;
-    padding: 35px 25px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 8px 25px rgba(0,0,0,.08);
-}
-
-.price-card h3 {
-    color: #071952;
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-
-.price {
-    color: #1685ff;
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.price-card p:not(.price) {
-    color: #687386;
-    margin: 8px 0;
-}
-
-.price-card .btn {
-    margin-top: 20px;
-}
-
-.featured {
-    border: 3px solid #1685ff;
-    transform: scale(1.03);
-}
-
-.popular {
-    position: absolute;
-    top: -14px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #1685ff;
-    color: white;
-    padding: 6px 18px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-@media (max-width: 800px) {
-    .pricing-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .featured {
-        transform: none;
-    }
-}.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 30px;
-}
-
-.portfolio-card {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    text-align: center;
-}
-
-.portfolio-image {
-    height: 180px;
-    background: #e8f2ff;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 60px;
-    margin-bottom: 20px;
-}
-
-.portfolio-card h3 {
-    color: #071952;
-    margin-bottom: 8px;
-}
-
-.portfolio-card p {
-    color: #687386;
-}
-
-@media (max-width: 700px) {
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
-}
+<style>
 *{
     margin:0;
     padding:0;
@@ -132,45 +24,26 @@ body{
     line-height:1.6;
 }
 
-/* ===== HEADER ===== */
-
 header{
     background:#061735;
     position:sticky;
     top:0;
     z-index:999;
-    box-shadow:0 4px 20px rgba(0,0,0,.15);
 }
 
 .navbar{
     max-width:1200px;
     margin:auto;
-    padding:16px 25px;
+    padding:15px 20px;
     display:flex;
     align-items:center;
     justify-content:space-between;
 }
 
 .logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
     color:white;
-    font-size:21px;
-    font-weight:800;
-}
-
-.logo-icon{
-    width:45px;
-    height:45px;
-    border:3px solid #1685ff;
-    border-radius:10px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:24px;
+    font-size:20px;
     font-weight:bold;
-    transform:skew(-5deg);
 }
 
 .logo span{
@@ -179,173 +52,18 @@ header{
 
 .nav-links{
     display:flex;
-    gap:25px;
+    gap:15px;
+    flex-wrap:wrap;
 }
 
 .nav-links a{
     color:white;
     text-decoration:none;
-    font-weight:600;
-    transition:.3s;
-}
-
-.nav-links a:hover{
-    color:#1685ff;
-}
-
-/* ===== HERO ===== */
-
-.hero{
-    min-height:680px;
-    background:
-    radial-gradient(circle at 80% 20%,rgba(22,133,255,.25),transparent 30%),
-    linear-gradient(135deg,#061735,#0b2e69);
-    color:white;
-    display:flex;
-    align-items:center;
-    overflow:hidden;
-}
-
-.hero-container{
-    max-width:1200px;
-    width:100%;
-    margin:auto;
-    padding:80px 25px;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-    align-items:center;
-}
-
-.hero h1{
-    font-size:58px;
-    line-height:1.1;
-    margin-bottom:25px;
-}
-
-.hero h1 span{
-    color:#1685ff;
-}
-
-.hero p{
-    font-size:19px;
-    color:#dce8fa;
-    max-width:600px;
-    margin-bottom:30px;
-}
-
-.buttons{
-    display:flex;
-    gap:12px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    display:inline-block;
-    padding:15px 25px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.btn-blue{
-    background:#1685ff;
-    color:white;
-}
-
-.btn-blue:hover{
-    transform:translateY(-3px);
-}
-
-.btn-green{
-    background:#20c96b;
-    color:white;
-}
-
-.btn-green:hover{
-    transform:translateY(-3px);
-}
-
-/* ===== TECHNOLOGY IMAGE ===== */
-
-.tech-image{
-    position:relative;
-    min-height:390px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.glow{
-    position:absolute;
-    width:330px;
-    height:330px;
-    border-radius:50%;
-    background:#1685ff;
-    opacity:.15;
-    filter:blur(30px);
-}
-
-.laptop{
-    width:430px;
-    max-width:100%;
-    position:relative;
-    z-index:2;
-}
-
-.screen{
-    height:250px;
-    background:#101c35;
-    border:8px solid #34445f;
-    border-radius:15px 15px 5px 5px;
-    padding:18px;
-    box-shadow:0 25px 50px rgba(0,0,0,.4);
-}
-
-.screen-top{
-    color:#1685ff;
     font-size:14px;
-    margin-bottom:20px;
 }
-
-.screen h3{
-    font-size:27px;
-    margin-bottom:15px;
-}
-
-.fake-line{
-    height:9px;
-    background:#263a60;
-    border-radius:10px;
-    margin:12px 0;
-}
-
-.fake-line.short{
-    width:60%;
-}
-
-.fake-button{
-    display:inline-block;
-    background:#1685ff;
-    padding:9px 18px;
-    border-radius:5px;
-    margin-top:10px;
-    font-size:12px;
-}
-
-.keyboard{
-    height:28px;
-    width:110%;
-    margin-left:-5%;
-    background:#718096;
-    border-radius:0 0 12px 12px;
-}
-
-/* ===== GENERAL SECTIONS ===== */
 
 section{
-    padding:85px 25px;
+    padding:70px 20px;
 }
 
 .container{
@@ -353,31 +71,92 @@ section{
     margin:auto;
 }
 
+.hero{
+    background:linear-gradient(135deg,#061735,#0b2e69);
+    color:white;
+    min-height:600px;
+    display:flex;
+    align-items:center;
+}
+
+.hero-container{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:52px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#1685ff;
+}
+
+.hero p{
+    font-size:18px;
+    color:#dce8fa;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 22px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:5px;
+}
+
+.blue{
+    background:#1685ff;
+    color:white;
+}
+
+.green{
+    background:#20c96b;
+    color:white;
+}
+
+.tech-box{
+    background:#101c35;
+    border:8px solid #34445f;
+    border-radius:15px;
+    padding:40px 25px;
+    text-align:center;
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+}
+
+.tech-box h2{
+    color:#1685ff;
+    margin-bottom:15px;
+}
+
 .section-title{
     text-align:center;
-    margin-bottom:45px;
+    margin-bottom:40px;
 }
 
 .section-title small{
     color:#1685ff;
     font-weight:bold;
     text-transform:uppercase;
-    letter-spacing:2px;
 }
 
 .section-title h2{
-    font-size:38px;
     color:#071952;
-    margin-top:8px;
+    font-size:38px;
+    margin:8px 0;
 }
 
 .section-title p{
-    max-width:650px;
-    margin:10px auto;
     color:#687386;
 }
-
-/* ===== ABOUT ===== */
 
 .about{
     background:white;
@@ -386,46 +165,32 @@ section{
 .about-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:50px;
+    gap:40px;
     align-items:center;
 }
 
-.about-visual{
-    min-height:350px;
+.about-box{
     background:linear-gradient(145deg,#071952,#1685ff);
-    border-radius:20px;
-    padding:30px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
     color:white;
+    padding:60px 30px;
+    border-radius:20px;
     text-align:center;
-    box-shadow:0 15px 40px rgba(7,25,82,.2);
 }
 
-.about-visual div{
-    border:2px solid rgba(255,255,255,.3);
-    padding:45px 25px;
-    border-radius:15px;
-}
-
-.about-visual strong{
-    display:block;
-    font-size:65px;
+.about-box strong{
+    font-size:70px;
 }
 
 .about h3{
     color:#071952;
     font-size:30px;
-    margin-bottom:18px;
+    margin-bottom:15px;
 }
 
 .about p{
     color:#5e6878;
     margin-bottom:15px;
 }
-
-/* ===== SERVICES ===== */
 
 .services{
     background:#f5f8fc;
@@ -439,29 +204,15 @@ section{
 
 .card{
     background:white;
-    padding:32px 22px;
+    padding:30px 20px;
     border-radius:15px;
     text-align:center;
     box-shadow:0 8px 25px rgba(0,0,0,.07);
-    transition:.3s;
 }
 
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 15px 35px rgba(0,0,0,.12);
-}
-
-.icon{
-    width:65px;
-    height:65px;
-    margin:0 auto 18px;
-    border-radius:50%;
-    background:#e8f2ff;
-    color:#1685ff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:30px;
+.card .icon{
+    font-size:40px;
+    margin-bottom:15px;
 }
 
 .card h3{
@@ -471,10 +222,81 @@ section{
 
 .card p{
     color:#687386;
-    font-size:15px;
 }
 
-/* ===== WHY US ===== */
+
+/* ================= PRICING ================= */
+
+.pricing{
+    background:#ffffff;
+}
+
+.pricing-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.pricing-title h2{
+    color:#071952;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.pricing-title p{
+    color:#687386;
+}
+
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.price-card{
+    background:#f5f8fc;
+    border-radius:15px;
+    padding:35px 25px;
+    text-align:center;
+    border:2px solid #e1e7f0;
+}
+
+.price-card h3{
+    color:#071952;
+    font-size:27px;
+}
+
+.amount{
+    color:#1685ff;
+    font-size:35px;
+    font-weight:bold;
+    margin:15px 0 20px;
+}
+
+.price-card p{
+    color:#687386;
+    margin:8px 0;
+}
+
+.price-card .btn{
+    margin-top:20px;
+}
+
+.popular{
+    border:3px solid #1685ff;
+}
+
+.badge{
+    display:inline-block;
+    background:#1685ff;
+    color:white;
+    padding:5px 15px;
+    border-radius:20px;
+    font-size:12px;
+    margin-bottom:15px;
+}
+
+
+/* ================= WHY ================= */
 
 .why{
     background:#061735;
@@ -492,274 +314,189 @@ section{
 .why-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:25px;
+    gap:20px;
 }
 
 .why-card{
-    border:1px solid rgba(255,255,255,.15);
     padding:30px;
+    border:1px solid rgba(255,255,255,.2);
     border-radius:15px;
-    background:rgba(255,255,255,.05);
 }
 
 .why-card h3{
-    margin:15px 0 8px;
+    margin:15px 0 10px;
 }
 
 .why-card p{
     color:#c5d1e5;
 }
 
-/* ===== CONTACT ===== */
+
+/* ================= TESTIMONIALS ================= */
+
+.testimonials{
+    background:white;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.testimonial-card{
+    background:#f5f8fc;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.stars{
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.testimonial-card p{
+    color:#687386;
+    margin-bottom:15px;
+}
+
+
+/* ================= FAQ ================= */
+
+.faq{
+    background:#f5f8fc;
+}
+
+.faq-list{
+    max-width:800px;
+    margin:auto;
+}
+
+details{
+    background:white;
+    padding:20px;
+    margin-bottom:12px;
+    border-radius:10px;
+}
+
+summary{
+    cursor:pointer;
+    font-weight:bold;
+    color:#071952;
+}
+
+details p{
+    color:#687386;
+    margin-top:12px;
+}
+
+
+/* ================= CONTACT ================= */
 
 .contact{
     background:white;
     text-align:center;
 }
 
-.contact-box{
-    max-width:750px;
-    margin:auto;
-}
-
-.contact-box h2{
-    font-size:40px;
+.contact h2{
     color:#071952;
-    margin-bottom:15px;
+    font-size:40px;
 }
 
-.contact-box p{
+.contact p{
     color:#687386;
-    margin-bottom:25px;
+    margin:15px 0 25px;
 }
 
-.whatsapp-number{
+.whatsapp{
     display:block;
-    margin-top:20px;
     color:#071952;
     font-size:20px;
     font-weight:bold;
+    margin-top:20px;
 }
 
-/* ===== FOOTER ===== */
+
+/* ================= FOOTER ================= */
 
 footer{
     background:#031126;
     color:white;
-    padding:50px 25px 25px;
-}
-
-.footer-grid{
-    max-width:1100px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:2fr 1fr 1fr;
-    gap:40px;
-}
-
-footer h3{
-    margin-bottom:15px;
+    padding:45px 20px 20px;
+    text-align:center;
 }
 
 footer p{
     color:#aebbd0;
+    margin:10px;
 }
 
 footer a{
-    display:block;
     color:#aebbd0;
     text-decoration:none;
-    margin:7px 0;
-}
-
-footer a:hover{
-    color:#1685ff;
+    margin:8px;
 }
 
 .copyright{
-    max-width:1100px;
-    margin:40px auto 0;
+    border-top:1px solid rgba(255,255,255,.15);
+    margin-top:30px;
     padding-top:20px;
-    border-top:1px solid rgba(255,255,255,.1);
-    text-align:center;
-    color:#8290a6;
 }
 
-/* ===== MOBILE ===== */
 
-@media(max-width:850px){
+/* ================= MOBILE ================= */
 
-    .nav-links{
-        gap:10px;
-    }
-
-    .nav-links a{
-        font-size:13px;
-    }
-
-    .hero-container{
-        grid-template-columns:1fr;
-        text-align:center;
-    }
-
-    .hero p{
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    .buttons{
-        justify-content:center;
-    }
-
-    .hero h1{
-        font-size:43px;
-    }
-
-    .about-grid{
-        grid-template-columns:1fr;
-    }
-
-    .service-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .why-grid{
-        grid-template-columns:1fr;
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr;
-    }
-}
-
-@media(max-width:550px){
+@media(max-width:800px){
 
     .navbar{
         flex-direction:column;
         gap:15px;
     }
 
-    .nav-links{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-    .hero{
-        min-height:auto;
-    }
-
-    .hero-container{
-        padding:65px 20px;
+    .hero-container,
+    .about-grid{
+        grid-template-columns:1fr;
+        text-align:center;
     }
 
     .hero h1{
-        font-size:36px;
+        font-size:40px;
     }
 
-    .hero p{
-        font-size:17px;
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
     }
+
+    .pricing-grid,
+    .why-grid,
+    .testimonial-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:500px){
 
     .service-grid{
         grid-template-columns:1fr;
     }
 
-    .section-title h2{
+    .hero h1{
+        font-size:34px;
+    }
+
+    .section-title h2,
+    .pricing-title h2{
         font-size:30px;
     }
 
-    .laptop{
-        width:330px;
-    }
-
-    .screen{
-        height:195px;
-    }
 }
-</style>#contactForm {
-    max-width: 600px;
-    margin: 30px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
+</style>
+</head>
 
-#contactForm input,
-#contactForm textarea {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #d5dce8;
-    border-radius: 8px;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    outline: none;
-}
+<body>
 
-#contactForm input:focus,
-#contactForm textarea:focus {
-    border-color: #1685ff;
-}
-
-#contactForm button {
-    padding: 15px;
-    background: #20c96b;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 17px;
-    font-weight: bold;
-    cursor: pointer;
-}8
-</head><link rel="icon" href="icon.svg" type="image/svg+xml"><meta name="description" content="West Websites creates professional, modern and mobile-friendly websites for businesses and individuals.">
-<meta name="keywords" content="West Websites, website design, web development, business websites, Nigeria">
-<meta name="author" content="West Websites">
-
-<body><script>
-if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js")
-        .then(() => console.log("West Websites app ready!"))
-        .catch(error => console.log("Service Worker error:", error));
-}
-</script><section id="portfolio"><meta property="og:title" content="West Websites | Professional Web Solutions">
-<meta property="og:description" content="Professional websites designed to help your business grow online.">
-<meta property="og:type" content="website">
-
-    <div class="container">
-
-        <div class="section-title">
-            <small>OUR WORK</small>
-            <h2>Our Portfolio</h2>
-            <p>
-                A look at some of the digital experiences
-                created by West Websites.
-            </p>
-        </div>
-
-        <div class="portfolio-grid">
-
-            <div class="portfolio-card">
-                <div class="portfolio-image">💻</div>
-                <h3>Business Website</h3>
-                <p>Professional website for a growing business.</p>
-            </div>
-
-            <div class="portfolio-card">
-                <div class="portfolio-image">🛍️</div>
-                <h3>Online Store</h3>
-                <p>Clean and simple design for an online shop.</p>
-            </div>
-
-            <div class="portfolio-card">
-                <div class="portfolio-image">📱</div>
-                <h3>Mobile Website</h3>
-                <p>A responsive website designed for mobile users.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
 
 <!-- ================= HEADER ================= -->
 
@@ -768,13 +505,7 @@ if ("serviceWorker" in navigator) {
 <nav class="navbar">
 
     <div class="logo">
-
-        <div class="logo-icon">W</div>
-
-        <div>
-            WEST <span>WEBSITES</span>
-        </div>
-
+        WEST <span>WEBSITES</span>
     </div>
 
     <div class="nav-links">
@@ -782,17 +513,20 @@ if ("serviceWorker" in navigator) {
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
         <a href="#why">Why Us</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
 
     </div>
 
-</nav><a href="#pricing">Pricing</a><a href="#portfolio">Portfolio</a>
+</nav>
 
 </header>
 
 
-<!-- ================= HERO ================= -->
+<!-- ================= HOME ================= -->
 
 <section class="hero" id="home">
 
@@ -809,56 +543,34 @@ if ("serviceWorker" in navigator) {
         <p>
             West Websites creates professional,
             responsive and user-friendly websites
-            that help businesses stand out online.
+            for businesses and individuals.
         </p>
 
-        <div class="buttons">
+        <a href="#pricing" class="btn blue">
+            View Our Prices
+        </a>
 
-            <a href="#services" class="btn btn-blue">
-                Explore Our Services
-            </a>
-
-            <a href="https://wa.me/2348036013299"
-               class="btn btn-green">
-                💬 Chat on WhatsApp
-            </a>
-
-        </div>
+        <a href="https://wa.me/2348036013299"
+           class="btn green">
+            💬 WhatsApp Us
+        </a>
 
     </div>
 
 
-    <!-- PROFESSIONAL TECHNOLOGY VISUAL -->
+    <div class="tech-box">
 
-    <div class="tech-image">
+        <h2>&lt;/&gt; WEST WEBSITES</h2>
 
-        <div class="glow"></div>
+        <h3>Professional Digital Solutions</h3>
 
-        <div class="laptop">
+        <p>
+            Modern websites built for your business.
+        </p>
 
-            <div class="screen">
+        <br>
 
-                <div class="screen-top">
-                    &lt;/&gt; WEST WEBSITES
-                </div>
-
-                <h3>
-                    Creating Digital
-                    Experiences
-                </h3>
-
-                <div class="fake-line"></div>
-                <div class="fake-line short"></div>
-
-                <div class="fake-button">
-                    GET STARTED
-                </div>
-
-            </div>
-
-            <div class="keyboard"></div>
-
-        </div>
+        💻 📱 🌐 🚀
 
     </div>
 
@@ -873,70 +585,52 @@ if ("serviceWorker" in navigator) {
 
 <div class="container">
 
-    <div class="section-title">
+<div class="section-title">
 
-        <small>About Us</small>
+    <small>About Us</small>
 
-        <h2>About West Websites</h2>
+    <h2>About West Websites</h2>
+
+    <p>
+        Helping businesses build a powerful online presence.
+    </p>
+
+</div>
+
+
+<div class="about-grid">
+
+    <div class="about-box">
+
+        <strong>W</strong>
+
+        <h2>WEST WEBSITES</h2>
 
         <p>
-            Helping businesses build a powerful
-            digital presence.
+            Digital solutions for modern businesses.
         </p>
 
     </div>
 
 
-    <div class="about-grid">
+    <div>
 
-        <div class="about-visual">
+        <h3>Your Ideas. Our Technology.</h3>
 
-            <div>
+        <p>
+            West Websites helps individuals,
+            entrepreneurs and businesses establish
+            a professional presence online.
+        </p>
 
-                <strong>W</strong>
-
-                <h3>
-                    WEST WEBSITES
-                </h3>
-
-                <p>
-                    Digital solutions for modern businesses.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div>
-
-            <h3>
-                Your Ideas.
-                Our Technology.
-            </h3>
-
-            <p>
-                West Websites is a digital web service
-                focused on helping individuals,
-                entrepreneurs and businesses establish
-                a professional presence online.
-            </p>
-
-            <p>
-                We create clean, attractive and
-                easy-to-use websites designed to work
-                across smartphones, tablets and computers.
-            </p>
-
-            <p>
-                Our goal is simple: create websites
-                that look professional and help your
-                business connect with more customers.
-            </p>
-
-        </div>
+        <p>
+            We create clean, attractive and
+            mobile-friendly websites.
+        </p>
 
     </div>
+
+</div>
 
 </div>
 
@@ -949,80 +643,185 @@ if ("serviceWorker" in navigator) {
 
 <div class="container">
 
-    <div class="section-title">
+<div class="section-title">
 
-        <small>Our Services</small>
+    <small>Our Services</small>
 
-        <h2>What We Offer</h2>
+    <h2>What We Offer</h2>
+
+    <p>
+        Professional digital services for businesses and individuals.
+    </p>
+
+</div>
+
+
+<div class="service-grid">
+
+    <div class="card">
+
+        <div class="icon">🌐</div>
+
+        <h3>Website Design</h3>
 
         <p>
-            Professional digital services for
-            businesses and individuals.
+            Modern and attractive websites designed around your brand.
         </p>
 
     </div>
 
 
-    <div class="service-grid">
+    <div class="card">
 
+        <div class="icon">💻</div>
 
-        <div class="card">
+        <h3>Website Development</h3>
 
-            <div class="icon">🌐</div>
-
-            <h3>Website Design</h3>
-
-            <p>
-                Modern and attractive websites
-                designed around your brand.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="icon">💻</div>
-
-            <h3>Website Development</h3>
-
-            <p>
-                Functional websites built to work
-                smoothly across different devices.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="icon">📱</div>
-
-            <h3>Mobile Websites</h3>
-
-            <p>
-                Responsive websites optimized
-                for smartphones and tablets.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="icon">🛠️</div>
-
-            <h3>Website Support</h3>
-
-            <p>
-                Updates, improvements and
-                ongoing website assistance.
-            </p>
-
-        </div>
-
+        <p>
+            Functional websites built to work across different devices.
+        </p>
 
     </div>
+
+
+    <div class="card">
+
+        <div class="icon">📱</div>
+
+        <h3>Mobile Websites</h3>
+
+        <p>
+            Responsive websites optimized for smartphones and tablets.
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <div class="icon">🛠️</div>
+
+        <h3>Website Support</h3>
+
+        <p>
+            Updates, improvements and ongoing website assistance.
+        </p>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PRICING ================= -->
+
+<section class="pricing" id="pricing">
+
+<div class="container">
+
+<div class="pricing-title">
+
+    <h2>💰 WEBSITE PRICING</h2>
+
+    <p>
+        Choose the package that works best for your business.
+    </p>
+
+</div>
+
+
+<div class="pricing-grid">
+
+
+    <!-- STARTER -->
+
+    <div class="price-card">
+
+        <h3>Starter</h3>
+
+        <div class="amount">
+            ₦50,000
+        </div>
+
+        <p>✓ Professional website</p>
+        <p>✓ Mobile-friendly design</p>
+        <p>✓ Up to 3 sections</p>
+        <p>✓ WhatsApp contact</p>
+
+        <a
+        href="https://wa.me/2348036013299?text=Hello%20West%20Websites%2C%20I%20want%20the%20Starter%20package."
+        class="btn blue">
+
+            Order Starter
+
+        </a>
+
+    </div>
+
+
+    <!-- BUSINESS -->
+
+    <div class="price-card popular">
+
+        <div class="badge">
+            MOST POPULAR
+        </div>
+
+        <h3>Business</h3>
+
+        <div class="amount">
+            ₦100,000
+        </div>
+
+        <p>✓ Professional website</p>
+        <p>✓ Mobile-friendly design</p>
+        <p>✓ Multiple sections</p>
+        <p>✓ WhatsApp integration</p>
+        <p>✓ Contact form</p>
+        <p>✓ Portfolio section</p>
+
+        <a
+        href="https://wa.me/2348036013299?text=Hello%20West%20Websites%2C%20I%20want%20the%20Business%20package."
+        class="btn green">
+
+            Order Business
+
+        </a>
+
+    </div>
+
+
+    <!-- PREMIUM -->
+
+    <div class="price-card">
+
+        <h3>Premium</h3>
+
+        <div class="amount">
+            ₦200,000+
+        </div>
+
+        <p>✓ Custom website</p>
+        <p>✓ Advanced features</p>
+        <p>✓ Custom design</p>
+        <p>✓ Business integrations</p>
+        <p>✓ Priority support</p>
+
+        <a
+        href="https://wa.me/2348036013299?text=Hello%20West%20Websites%2C%20I%20want%20the%20Premium%20package."
+        class="btn blue">
+
+            Order Premium
+
+        </a>
+
+    </div>
+
+
+</div>
 
 </div>
 
@@ -1035,68 +834,203 @@ if ("serviceWorker" in navigator) {
 
 <div class="container">
 
-    <div class="section-title">
+<div class="section-title">
 
-        <small>Why Choose Us?</small>
+    <small>Why Choose Us?</small>
 
-        <h2>
-            Why Businesses Choose West Websites
-        </h2>
+    <h2>Why Choose West Websites?</h2>
+
+    <p>
+        Quality, simplicity and great customer experience.
+    </p>
+
+</div>
+
+
+<div class="why-grid">
+
+    <div class="why-card">
+
+        <div class="icon">⭐</div>
+
+        <h3>Professional</h3>
 
         <p>
-            We focus on quality, simplicity and
-            a great customer experience.
+            Clean and modern designs that build credibility.
         </p>
 
     </div>
 
 
-    <div class="why-grid">
+    <div class="why-card">
 
+        <div class="icon">📱</div>
 
-        <div class="why-card">
+        <h3>Mobile Friendly</h3>
 
-            <div class="icon">⭐</div>
-
-            <h3>Professional</h3>
-
-            <p>
-                Clean, modern designs that help
-                your business build credibility.
-            </p>
-
-        </div>
-
-
-        <div class="why-card">
-
-            <div class="icon">📱</div>
-
-            <h3>Mobile Friendly</h3>
-
-            <p>
-                Your website will look great on
-                phones, tablets and computers.
-            </p>
-
-        </div>
-
-
-        <div class="why-card">
-
-            <div class="icon">🚀</div>
-
-            <h3>Fast & Reliable</h3>
-
-            <p>
-                We focus on creating simple,
-                useful and reliable websites.
-            </p>
-
-        </div>
-
+        <p>
+            Your website works on phones, tablets and computers.
+        </p>
 
     </div>
+
+
+    <div class="why-card">
+
+        <div class="icon">🚀</div>
+
+        <h3>Fast & Reliable</h3>
+
+        <p>
+            Simple, useful and reliable websites for your business.
+        </p>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials" id="testimonials">
+
+<div class="container">
+
+<div class="section-title">
+
+    <small>Testimonials</small>
+
+    <h2>What Our Clients Say</h2>
+
+</div>
+
+
+<div class="testimonial-grid">
+
+    <div class="testimonial-card">
+
+        <div class="stars">★★★★★</div>
+
+        <p>
+            "West Websites gave my business
+            a clean and professional online presence."
+        </p>
+
+        <strong>— Client Name</strong>
+
+    </div>
+
+
+    <div class="testimonial-card">
+
+        <div class="stars">★★★★★</div>
+
+        <p>
+            "The website looks great on my phone
+            and is easy for my customers to use."
+        </p>
+
+        <strong>— Client Name</strong>
+
+    </div>
+
+
+    <div class="testimonial-card">
+
+        <div class="stars">★★★★★</div>
+
+        <p>
+            "Professional service and a modern
+            website for my business."
+        </p>
+
+        <strong>— Client Name</strong>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section class="faq" id="faq">
+
+<div class="container">
+
+<div class="section-title">
+
+    <small>FAQ</small>
+
+    <h2>Frequently Asked Questions</h2>
+
+</div>
+
+
+<div class="faq-list">
+
+    <details>
+
+        <summary>
+            How can I order a website?
+        </summary>
+
+        <p>
+            Contact West Websites through WhatsApp
+            and tell us about your project.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Will my website work on phones?
+        </summary>
+
+        <p>
+            Yes. Our websites are designed to work
+            on smartphones, tablets and computers.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can you add my business information?
+        </summary>
+
+        <p>
+            Yes. We can add your business name,
+            services, photos and contact information.
+        </p>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            How do I contact West Websites?
+        </summary>
+
+        <p>
+            You can contact us directly through WhatsApp.
+        </p>
+
+    </details>
+
+</div>
 
 </div>
 
@@ -1105,91 +1039,26 @@ if ("serviceWorker" in navigator) {
 
 <!-- ================= CONTACT ================= -->
 
-<section class="contact" id="contact"><section class="contact" id="contact">
-
-    <div class="container">
-
-        <div class="section-title">
-            <small>CONTACT US</small>
-            <h2>Let's Work Together</h2>
-            <p>
-                Tell us what you need and we'll get back to you.
-            </p>
-        </div>
-
-        <form id="contactForm">
-
-            <input
-                type="text"
-                id="name"
-                placeholder="Your Name"
-                required
-            >
-
-            <input
-                type="email"
-                id="email"
-                placeholder="Your Email"
-                required
-            >
-
-            <textarea
-                id="message"
-                placeholder="Tell us about your project..."
-                rows="6"
-                required
-            ></textarea>
-
-            <button type="submit">
-                Send Enquiry 💬
-            </button>
-
-        </form>
-
-        <p class="whatsapp-number">
-            WhatsApp: +234 803 601 3299
-        </p>
-
-    </div>
-
-</section>
+<section class="contact" id="contact">
 
 <div class="container">
 
-    <div class="contact-box">
+    <h2>Let's Work Together</h2>
 
-        <div class="section-title">
+    <p>
+        Ready to build your professional website?
+    </p>
 
-            <small>Let's Work Together</small>
+    <a
+    href="https://wa.me/2348036013299?text=Hello%20West%20Websites%2C%20I%20want%20to%20build%20a%20website."
+    class="btn green">
 
-            <h2>
-                Have a Project in Mind?
-            </h2>
+        💬 Chat on WhatsApp
 
-        </div>
+    </a>
 
-        <p>
-            Let's bring your idea to life with
-            a professional website that represents
-            your brand and grows your business.
-        </p>
-
-
-        <a href="https://wa.me/2348036013299"
-           class="btn btn-green">
-
-            💬 Chat With West Websites
-
-        </a>
-
-
-        <div class="whatsapp-number">
-
-            WhatsApp:
-            +234 803 601 3299
-
-        </div>
-
+    <div class="whatsapp">
+        WhatsApp: +234 803 601 3299
     </div>
 
 </div>
@@ -1201,227 +1070,24 @@ if ("serviceWorker" in navigator) {
 
 <footer>
 
-<div class="footer-grid">
-
-
-    <div>
-
-        <div class="logo">
-
-            <div class="logo-icon">W</div>
-
-            <div>
-                WEST <span>WEBSITES</span>
-            </div>
-
-        </div>
-
-        <br>
-
-        <p>
-            Turning ideas into professional
-            digital experiences.
-        </p>
-
+    <div class="logo">
+        WEST <span>WEBSITES</span>
     </div>
 
+    <p>
+        Turning ideas into professional digital experiences.
+    </p>
 
-    <div>
+    <p>
+        📍 Nigeria
+    </p>
 
-        <h3>Quick Links</h3>
-
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#why">Why Us</a>
-        <a href="#contact">Contact</a>
-
-    </div><section id="pricing">
-
-    <div class="container">
-
-        <div class="section-title">
-            <small>PRICING</small>
-            <h2>Website Packages</h2>
-            <p>
-                Choose a package that fits your business needs.
-            </p>
-        </div>
-
-        <div class="pricing-grid">
-
-            <div class="price-card">
-                <h3>Starter</h3>
-                <p class="price">₦50,000</p>
-
-                <p>✓ Professional website</p>
-                <p>✓ Mobile-friendly design</p>
-                <p>✓ Up to 3 sections</p>
-                <p>✓ WhatsApp contact</p>
-
-                <a href="https://wa.me/2348036013299?text=Hello%20West%20Websites%2C%20I'm%20interested%20in%20the%20Starter%20package."
-                   class="btn btn-blue">
-                    Get Started
-                </a>
-            </div>
-
-
-            <div class="price-card featured">
-
-                <div class="popular">POPULAR</div>
-
-                <h3>Business</h3>
-                <p class="price">₦100,000</p>
-
-                <p>✓ Professional website</p>
-                <p>✓ Mobile-friendly design</p>
-                <p>✓ Multiple sections</p>
-                <p>✓ WhatsApp integration</p>
-                <p>✓ Contact form</p>
-                <p>✓ Portfolio section</p>
-
-                <a href="https://wa.me/2348036013299?text=Hello%20West%20Websites%2C%20I'm%20interested%20in%20the%20Business%20package."
-                   class="btn btn-green">
-                    Choose Business
-                </a>
-
-            </div>
-
-
-            <div class="price-card">
-
-                <h3>Premium</h3>
-                <p class="price">₦200,000+</p>
-
-                <p>✓ Custom website</p>
-                <p>✓ Advanced features</p>
-                <p>✓ Custom design</p>
-                <p>✓ Business integrations</p>
-                <p>✓ Priority support</p>
-
-                <a href="https://wa.me/2348036013299?text=Hello%20West%20Websites%2C%20I'd%20like%20to discuss%20a%20Premium%20website."
-                   class="btn btn-blue">
-                    Contact Us
-                </a>
-
-            </div>
-
-        </div>
-
+    <div class="copyright">
+        © 2026 West Websites. All rights reserved.
     </div>
-
-    </section>.pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 30px;
-}
-
-.price-card {
-    position: relative;
-    background: white;
-    padding: 35px 25px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 8px 25px rgba(0,0,0,.08);
-}
-
-.price-card h3 {
-    color: #071952;
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-
-.price {
-    color: #1685ff;
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.price-card p:not(.price) {
-    color: #687386;
-    margin: 8px 0;
-}
-
-.price-card .btn {
-    margin-top: 20px;
-}
-
-.featured {
-    border: 3px solid #1685ff;
-    transform: scale(1.03);
-}
-
-.popular {
-    position: absolute;
-    top: -14px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #1685ff;
-    color: white;
-    padding: 6px 18px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-@media (max-width: 800px) {
-    .pricing-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .featured {
-        transform: none;
-    }
-}
-
-
-    <div>
-
-        <h3>Contact Us</h3>
-
-        <a href="https://wa.me/2348036013299">
-            💬 +234 803 601 3299
-        </a>
-
-        <a href="#contact">
-            📍 Nigeria
-        </a>
-
-    </div>
-
-
-</div>
-
-
-<div class="copyright">
-
-    © 2026 West Websites.
-    All rights reserved.
-
-</div>
 
 </footer>
 
-</body><script>
-document.getElementById("contactForm").addEventListener("submit", function(event) {
 
-    event.preventDefault();
-
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
-
-    const text =
-        "Hello West Websites!%0A%0A" +
-        "Name: " + encodeURIComponent(name) + "%0A" +
-        "Email: " + encodeURIComponent(email) + "%0A" +
-        "Project: " + encodeURIComponent(message);
-
-    window.location.href =
-        "https://wa.me/2348036013299?text=" + text;
-
-});
-</script>
+</body>
 </html>
