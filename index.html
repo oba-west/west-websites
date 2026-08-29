@@ -827,6 +827,22 @@ footer a{
 
 </section>
 
+  <div class="client-form">
+
+    <h3>Start Your Project</h3>
+
+    <input
+        type="text"
+        id="clientName"
+        placeholder="Enter your name"
+        required
+    >
+
+    <button onclick="sendWhatsApp()">
+        💬 Continue on WhatsApp
+    </button>
+
+  </div>
 
 <!-- ================= WHY US ================= -->
 
@@ -1089,5 +1105,47 @@ footer a{
 </footer>
 
 
+</body><!-- Your contact form -->
+<div class="client-form">
+    <h3>Start Your Project</h3>
+
+    <input
+        type="text"
+        id="clientName"
+        placeholder="Enter your name"
+        required
+    >
+
+    <button onclick="sendWhatsApp()">
+        💬 Continue on WhatsApp
+    </button>
+</div>
+
+
+<!-- Add the JavaScript here -->
+<script>
+function sendWhatsApp(){
+
+    const name = document.getElementById("clientName").value.trim();
+
+    if(name === ""){
+        alert("Please enter your name.");
+        return;
+    }
+
+    const message =
+        "Hello West Websites, my name is " +
+        name +
+        ". I would like to create a website.";
+
+    const url =
+        "https://wa.me/2348036013299?text=" +
+        encodeURIComponent(message);
+
+    window.open(url, "_blank");
+}
+</script>
+
 </body>
+</html>
 </html>
